@@ -1,30 +1,42 @@
-import {Image, StyleSheet, Text, View} from 'react-native';
+import {
+  Image,
+  StyleSheet,
+  Text,
+  View,
+  SafeAreaView,
+  ScrollView,
+} from 'react-native';
 import React from 'react';
 
 export default function FancyCard() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.headingText}>Naruto</Text>
-      <View style={[styles.card, styles.cardElevated]}>
-        <Image
-          source={require('./asset/naruto.jpg')}
-          style={styles.cardImage}
-        />
-        <View style={styles.cardBody}>
-          <Text style={styles.cardTitle}>Naruto Shippuden</Text>
-          <Text style={styles.cardLevel}>Geatest Shinobi</Text>
-          <Text style={styles.cardDescription}>
-            Naruto Uzumaki (うずまきナルト, Uzumaki Naruto) is a shinobi of
-            Konohagakure's Uzumaki clan. He became the jinchūriki of the
-            Nine-Tails on the day of his birth — a fate that caused him to be
-            shunned by most of Konoha throughout his childhood. After joining
-            Team Kakashi, Naruto worked hard to gain the village's
-            acknowledgement all the while chasing his dream to become Hokage.
-          </Text>
-          <Text style={styles.cardFotter}>7th Hokage</Text>
+    <SafeAreaView style={styles.page}>
+      <ScrollView>
+        <View style={styles.container}>
+          <Text style={styles.headingText}>Naruto</Text>
+          <View style={[styles.card, styles.cardElevated]}>
+            <Image
+              source={require('./asset/naruto.jpg')}
+              style={styles.cardImage}
+            />
+            <View style={styles.cardBody}>
+              <Text style={styles.cardTitle}>Naruto Shippuden</Text>
+              <Text style={styles.cardLevel}>Geatest Shinobi</Text>
+              <Text style={styles.cardDescription}>
+                Naruto Uzumaki (うずまきナルト, Uzumaki Naruto) is a shinobi of
+                Konohagakure's Uzumaki clan. He became the jinchūriki of the
+                Nine-Tails on the day of his birth — a fate that caused him to
+                be shunned by most of Konoha throughout his childhood. After
+                joining Team Kakashi, Naruto worked hard to gain the village's
+                acknowledgement all the while chasing his dream to become
+                Hokage.
+              </Text>
+              <Text style={styles.cardFotter}>7th Hokage</Text>
+            </View>
+          </View>
         </View>
-      </View>
-    </View>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 
@@ -33,6 +45,12 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     paddingHorizontal: 8,
+  },
+  page: {
+    flex: 1,
+    backgroundColor: '#f4f6f7',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   card: {
     width: 350,

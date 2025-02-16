@@ -1,0 +1,34 @@
+yper Cars – Extremely high-performance cars with advanced technology and prices to match.
+
+Example: Bugatti Chiron, McLaren P1, Ferrari LaFerrari
+Vintage Cars – Classic cars that are typically at least 20 years old and often restored or preserved.
+
+Example: 1960s Ford Mustang, 1950s Chevrolet Corvette, 1960 Jaguar E-Type
+Most Popular Cars – Cars that have widespread appeal and are commonly seen on the road.
+
+Example: Toyota Corolla, Honda Civic, Ford F-150
+Iconic Cars – Cars that are legendary, often due to their design, performance, or cultural significance.
+
+Example: Porsche 911, Ford Mustang, Lamborghini Miura
+Luxury Cars – High-end cars focused on comfort, quality, and prestigious brands.
+
+Example: Rolls-Royce Phantom, Bentley Continental GT, Mercedes S-Class
+Sports Cars – Cars designed for high-speed and agile handling, usually two-seater.
+
+Example: Chevrolet Corvette, Ferrari 488, Porsche 911
+Electric Cars – Cars powered by electric motors instead of internal combustion engines.
+
+Example: Tesla Model S, Nissan Leaf, Rivian R1T
+Off-Road Cars – Vehicles built for tough terrains like dirt, rocks, and mud.
+
+Example: Jeep Wrangler, Land Rover Defender, Toyota Land Cruiser
+Supercars – High-performance sports cars but not quite at the level of hypercars.
+
+Example: Ferrari 488 GTB, McLaren 720S, Lamborghini Huracán
+Convertible Cars – Cars with a roof that can be folded back or removed.
+
+Example: BMW Z4, Mazda MX-5 Miata, Audi R8 Spyder
+Family Cars – Practical cars with plenty of room for passengers and luggage.
+Example: Honda CR-V, Toyota Highlander, Ford Escape
+Concept Cars – Prototype vehicles designed to showcase future designs and technologies.
+Example: BMW Vision Next 100, Mercedes-Benz F 015, Lexus LF-LC
