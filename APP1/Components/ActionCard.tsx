@@ -1,5 +1,7 @@
 import {StyleSheet, Text, View, Linking, Image} from 'react-native';
 import React from 'react';
+import ElevatedCards from './ElevatedCards';
+
 
 export default function ActionCard() {
   function openWebsite(websiteLink: string) {
@@ -12,10 +14,18 @@ export default function ActionCard() {
         <Text> what</Text>
       </View>
       <Image
-      source={{uri}}
-    </View>
+      />
+      </View>
+    
   );
 }
+const styles2 =StyleSheet.create({
+  cardImage:{
+    
+  }
+}
+
+)
 
 const styles = StyleSheet.create({
   headingText: {
