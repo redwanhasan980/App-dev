@@ -7,16 +7,38 @@ import {
   View,
   TouchableOpacity,
 } from 'react-native';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import React from 'react';
 import styles from './style/styles';
 import LinearGradient from 'react-native-linear-gradient';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {RootStackParamList} from '../App';
+
 type HomeProp = NativeStackScreenProps<RootStackParamList, 'CategoryCard'>;
 
 export default function CategoryCard({navigation}: HomeProp) {
   return (
     <SafeAreaView style={styles.page}>
+      <View
+        style={{
+          height: 50,
+
+          elevation: 5,
+          marginRight: 400,
+        }}>
+        <View
+          style={{
+            height: 50,
+            width: 105,
+
+            position: 'absolute',
+          }}>
+          <Image
+            source={require('./asset/mainlogo.png')}
+            style={{width: '100%', height: '100%'}}
+          />
+        </View>
+      </View>
       <ScrollView>
         <View>
           <View style={styles.headingStyle}>
@@ -38,7 +60,6 @@ export default function CategoryCard({navigation}: HomeProp) {
                   <LinearGradient
                     colors={[
                       'rgba(255,255,255,1)',
-
                       'rgba(255,255,255,0.0)',
                       'rgba(255,255,255,0.5)',
                       'rgba(255,255,255,1)',
@@ -75,8 +96,8 @@ export default function CategoryCard({navigation}: HomeProp) {
                 onPress={() => navigation.navigate('Fancy')}>
                 <View style={pageStyle.imgContainer}>
                   <Image
-                    source={require('./asset/vintage.jpg')}
-                    style={pageStyle.img}
+                    source={require('./asset/vintage.png')}
+                    style={[pageStyle.img, {marginBottom: 60}]}
                   />
 
                   <LinearGradient
@@ -97,8 +118,8 @@ export default function CategoryCard({navigation}: HomeProp) {
                 onPress={() => navigation.navigate('Fancy')}>
                 <View style={pageStyle.imgContainer}>
                   <Image
-                    source={require('./asset/rolls.jpg')}
-                    style={pageStyle.img}
+                    source={require('./asset/rolls2.png')}
+                    style={[{width: '100%', height: '80%', marginTop: 20}]}
                   />
 
                   <LinearGradient
@@ -114,6 +135,7 @@ export default function CategoryCard({navigation}: HomeProp) {
                   <Text style={pageStyle.cardHeading}>Luxury Car</Text>
                 </View>
               </TouchableOpacity>
+              <View style={{height: 70}}></View>
             </ScrollView>
           </View>
         </View>
@@ -124,7 +146,7 @@ export default function CategoryCard({navigation}: HomeProp) {
 const pageStyle = StyleSheet.create({
   card: {
     width: 350,
-    height: 350,
+    height: 300,
     borderRadius: 6,
     marginVertical: 20,
     marginHorizontal: 16,
@@ -141,14 +163,14 @@ const pageStyle = StyleSheet.create({
 
   img: {
     flex: 1,
-    height: 350,
+    height: 300,
     width: 350,
     borderRadius: 6,
     resizeMode: 'stretch',
   },
   imgContainer: {
     flex: 1,
-    height: 350,
+    height: 300,
     width: 350,
 
     borderRadius: 6,

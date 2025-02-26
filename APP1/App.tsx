@@ -1,38 +1,27 @@
-import {View, Text, SafeAreaView, ScrollView} from 'react-native';
-import React from 'react';
-import FlatCards from './Components/FlatCards';
-import ElevatedCards from './Components/ElevatedCards';
-import FancyCard from './Components/FancyCard';
-import ActionCard from './Components/ActionCard';
-import CategoryCard from './Components/CategoryCard';
-import HyperMenu from './Components/HyperCar/HyperMenu';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {NativeStackScreenProps} from '@react-navigation/native-stack';
+import FancyCard from './Components/FancyCard';
+import FooterCustom from './Components/FooterCustom'; // Import FooterCustom
+
 export type RootStackParamList = {
+  Tabs: undefined; // Root is FooterCustom
   Fancy: undefined;
-  CategoryCard: undefined;
-  HyperMenu: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
+
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="CategoryCard">
+      <Stack.Navigator initialRouteName="Tabs">
         <Stack.Screen
-          name="CategoryCard"
-          component={CategoryCard}
+          name="Tabs"
+          component={FooterCustom}
           options={{headerShown: false}}
         />
         <Stack.Screen
           name="Fancy"
           component={FancyCard}
-          options={{headerShown: false}}
-        />
-        <Stack.Screen
-          name="HyperMenu"
-          component={HyperMenu}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

@@ -12,6 +12,26 @@ import styles from '../style/styles';
 export default function HyperMenu() {
   return (
     <SafeAreaView style={styles.page}>
+      <View
+        style={{
+          height: 50,
+          backgroundColor: 'red',
+          elevation: 5,
+          marginRight: 400,
+        }}>
+        <View
+          style={{
+            height: 50,
+            width: 105,
+
+            position: 'absolute',
+          }}>
+          <Image
+            source={require('../asset/mainlogo.png')}
+            style={{width: '100%', height: '100%'}}
+          />
+        </View>
+      </View>
       <ScrollView>
         {/* bugatti */}
         <View style={pageStyle.cardContainer}>
@@ -143,6 +163,7 @@ export default function HyperMenu() {
             </View>
           </View>
         </View>
+        <View style={{height: 60}}></View>
       </ScrollView>
     </SafeAreaView>
   );
