@@ -50,14 +50,15 @@ const FooterCustom = () => {
       {/* Pass HomeStackScreen as the component to Tab.Screen */}
 
       <Tab.Screen
-        name="Home"
-        component={HomeStackScreen}
+        name="Community"
+        component={Community}
         options={{
           headerShown: false,
+
           tabBarIcon: ({focused}) => (
             <View style={pageStyle.footerContainer}>
               <Image
-                source={require('./asset/Home.png')}
+                source={require('./asset/community.png')}
                 resizeMode={'contain'}
                 style={[
                   pageStyle.Icon,
@@ -70,17 +71,15 @@ const FooterCustom = () => {
           ),
         }}
       />
-
       <Tab.Screen
-        name="Community"
-        component={Community}
+        name="Home"
+        component={HomeStackScreen}
         options={{
           headerShown: false,
-
           tabBarIcon: ({focused}) => (
             <View style={pageStyle.footerContainer}>
               <Image
-                source={require('./asset/community.png')}
+                source={require('./asset/Home.png')}
                 resizeMode={'contain'}
                 style={[
                   pageStyle.Icon,

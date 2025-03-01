@@ -19,20 +19,8 @@ type HomeProp = NativeStackScreenProps<RootStackParamList, 'CategoryCard'>;
 export default function CategoryCard({navigation}: HomeProp) {
   return (
     <SafeAreaView style={styles.page}>
-      <View
-        style={{
-          height: 50,
-
-          elevation: 5,
-          marginRight: 400,
-        }}>
-        <View
-          style={{
-            height: 50,
-            width: 105,
-
-            position: 'absolute',
-          }}>
+      <View style={{height: 40, backgroundColor: '#b3b6b7'}}>
+        <View style={{height: 40, width: 80, backgroundColor: 'blue'}}>
           <Image
             source={require('./asset/mainlogo.png')}
             style={{width: '100%', height: '100%'}}

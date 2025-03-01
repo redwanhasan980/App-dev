@@ -1,184 +1,193 @@
-import {StyleSheet, Text, View, Dimensions, Image} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  Dimensions,
+  Image,
+  SafeAreaView,
+} from 'react-native';
 import React from 'react';
 
 const {width, height} = Dimensions.get('window');
 const Profile = () => {
   return (
-    <View style={[pageStyle.head, {}]}>
-      <View style={pageStyle.profileContainer}>
-        <Image
-          source={require('./asset/shelbyblack.jpg')}
-          style={{width: '100%', height: '100%'}}
-        />
-        <View style={pageStyle.profile}>
-          <View
-            style={{
-              height: 70,
-              marginTop: 15,
-              justifyContent: 'center',
-              alignItems: 'center',
-              position: 'absolute',
-              marginBottom: 80,
-            }}>
-            <Text style={pageStyle.name}>Md Redwan hasan</Text>
-          </View>
-          <View
-            style={[
-              {
-                marginRight: 200,
-              },
-              pageStyle.rating,
-            ]}>
-            <Text style={[pageStyle.heading]}>Follower</Text>
-          </View>
-          <View style={[{}, pageStyle.rating]}>
-            <Text style={pageStyle.heading}>Rating</Text>
-          </View>
-          <View
-            style={[
-              {
-                marginLeft: 200,
-              },
-              pageStyle.rating,
-            ]}>
-            <Text style={pageStyle.heading}>Question</Text>
-          </View>
-          <View
-            style={[
-              {
-                marginRight: 200,
-              },
-              pageStyle.ratingNum,
-            ]}>
-            <Text style={pageStyle.headingNum}>12.5k</Text>
-          </View>
-          <View style={[{}, pageStyle.ratingNum]}>
-            <Text style={pageStyle.headingNum}>4.6</Text>
-          </View>
-          <View style={[{marginLeft: 200}, pageStyle.ratingNum]}>
-            <Text style={pageStyle.headingNum}>373</Text>
-          </View>
-        </View>
-
-        <View style={pageStyle.ProfilePic}>
+    <SafeAreaView>
+      <View style={[pageStyle.head, {}]}>
+        <View style={pageStyle.profileContainer}>
           <Image
-            source={require('./asset/myprofile.jpg')}
-            style={{width: '100%', height: '100%', opacity: 10}}
-          />
-        </View>
-      </View>
-      <View style={{height: 120}}></View>
-
-      <View style={pageStyle.card}>
-        <View style={pageStyle.menuImg}>
-          <Image
-            source={require('./asset/car.png')}
-            style={{width: '90%', height: '90%'}}
-          />
-        </View>
-        <View style={pageStyle.menuTxt}>
-          <Text style={pageStyle.menuFont}>Favourite Cars</Text>
-        </View>
-        <View style={pageStyle.menuArrow}>
-          <Image
-            source={require('./asset/arrow.png')}
+            source={require('./asset/shelbyblack.jpg')}
             style={{width: '100%', height: '100%'}}
           />
-        </View>
-      </View>
+          <View style={pageStyle.profile}>
+            <View
+              style={{
+                height: 70,
+                marginTop: 15,
+                justifyContent: 'center',
+                alignItems: 'center',
+                position: 'absolute',
+                marginBottom: 80,
+              }}>
+              <Text style={pageStyle.name}>Md Redwan hasan</Text>
+            </View>
+            <View
+              style={[
+                {
+                  marginRight: 200,
+                },
+                pageStyle.rating,
+              ]}>
+              <Text style={[pageStyle.heading]}>Follower</Text>
+            </View>
+            <View style={[{}, pageStyle.rating]}>
+              <Text style={pageStyle.heading}>Rating</Text>
+            </View>
+            <View
+              style={[
+                {
+                  marginLeft: 200,
+                },
+                pageStyle.rating,
+              ]}>
+              <Text style={pageStyle.heading}>Question</Text>
+            </View>
+            <View
+              style={[
+                {
+                  marginRight: 200,
+                },
+                pageStyle.ratingNum,
+              ]}>
+              <Text style={pageStyle.headingNum}>12.5k</Text>
+            </View>
+            <View style={[{}, pageStyle.ratingNum]}>
+              <Text style={pageStyle.headingNum}>4.6</Text>
+            </View>
+            <View style={[{marginLeft: 200}, pageStyle.ratingNum]}>
+              <Text style={pageStyle.headingNum}>373</Text>
+            </View>
+          </View>
 
-      <View style={pageStyle.card}>
-        <View style={pageStyle.menuImg}>
-          <Image
-            source={require('./asset/Question.png')}
-            style={{width: '90%', height: '90%'}}
-          />
+          <View style={pageStyle.ProfilePic}>
+            <Image
+              source={require('./asset/myprofile.jpg')}
+              style={{width: '100%', height: '100%', opacity: 10}}
+            />
+          </View>
         </View>
-        <View style={pageStyle.menuTxt}>
-          <Text style={pageStyle.menuFont}>Questions</Text>
-        </View>
-        <View style={pageStyle.menuArrow}>
-          <Image
-            source={require('./asset/arrow.png')}
-            style={{width: '100%', height: '100%'}}
-          />
-        </View>
-      </View>
+        <View style={{height: 120}}></View>
 
-      <View style={pageStyle.card}>
-        <View style={pageStyle.menuImg}>
-          <Image
-            source={require('./asset/post2.png')}
-            style={{width: '90%', height: '90%'}}
-          />
+        <View style={pageStyle.card}>
+          <View style={pageStyle.menuImg}>
+            <Image
+              source={require('./asset/car.png')}
+              style={{width: '90%', height: '90%'}}
+            />
+          </View>
+          <View style={pageStyle.menuTxt}>
+            <Text style={pageStyle.menuFont}>Favourite Cars</Text>
+          </View>
+          <View style={pageStyle.menuArrow}>
+            <Image
+              source={require('./asset/arrow.png')}
+              style={{width: '100%', height: '100%'}}
+            />
+          </View>
         </View>
-        <View style={pageStyle.menuTxt}>
-          <Text style={pageStyle.menuFont}>Posts</Text>
-        </View>
-        <View style={pageStyle.menuArrow}>
-          <Image
-            source={require('./asset/arrow.png')}
-            style={{width: '100%', height: '100%'}}
-          />
-        </View>
-      </View>
 
-      <View style={pageStyle.card}>
-        <View style={pageStyle.menuImg}>
-          <Image
-            source={require('./asset/setting.png')}
-            style={{width: '90%', height: '90%'}}
-          />
+        <View style={pageStyle.card}>
+          <View style={pageStyle.menuImg}>
+            <Image
+              source={require('./asset/Question.png')}
+              style={{width: '90%', height: '90%'}}
+            />
+          </View>
+          <View style={pageStyle.menuTxt}>
+            <Text style={pageStyle.menuFont}>Questions</Text>
+          </View>
+          <View style={pageStyle.menuArrow}>
+            <Image
+              source={require('./asset/arrow.png')}
+              style={{width: '100%', height: '100%'}}
+            />
+          </View>
         </View>
-        <View style={pageStyle.menuTxt}>
-          <Text style={pageStyle.menuFont}>Settings</Text>
-        </View>
-        <View style={pageStyle.menuArrow}>
-          <Image
-            source={require('./asset/arrow.png')}
-            style={{width: '100%', height: '100%'}}
-          />
-        </View>
-      </View>
 
-      <View style={pageStyle.card}>
-        <View style={pageStyle.menuImg}>
-          <Image
-            source={require('./asset/loc.png')}
-            style={{width: '90%', height: '90%'}}
-          />
+        <View style={pageStyle.card}>
+          <View style={pageStyle.menuImg}>
+            <Image
+              source={require('./asset/post2.png')}
+              style={{width: '90%', height: '90%'}}
+            />
+          </View>
+          <View style={pageStyle.menuTxt}>
+            <Text style={pageStyle.menuFont}>Posts</Text>
+          </View>
+          <View style={pageStyle.menuArrow}>
+            <Image
+              source={require('./asset/arrow.png')}
+              style={{width: '100%', height: '100%'}}
+            />
+          </View>
         </View>
-        <View style={pageStyle.menuTxt}>
-          <Text style={[pageStyle.menuFont, {fontSize: 18}]}>
-            Kapasia, Gazipur, Dhaka
-          </Text>
-        </View>
-        <View style={pageStyle.menuArrow}>
-          <Image
-            source={require('./asset/arrow.png')}
-            style={{width: '100%', height: '100%'}}
-          />
-        </View>
-      </View>
 
-      <View style={pageStyle.card}>
-        <View style={pageStyle.menuImg}>
-          <Image
-            source={require('./asset/logout.png')}
-            style={{width: '90%', height: '90%'}}
-          />
+        <View style={pageStyle.card}>
+          <View style={pageStyle.menuImg}>
+            <Image
+              source={require('./asset/setting.png')}
+              style={{width: '90%', height: '90%'}}
+            />
+          </View>
+          <View style={pageStyle.menuTxt}>
+            <Text style={pageStyle.menuFont}>Settings</Text>
+          </View>
+          <View style={pageStyle.menuArrow}>
+            <Image
+              source={require('./asset/arrow.png')}
+              style={{width: '100%', height: '100%'}}
+            />
+          </View>
         </View>
-        <View style={pageStyle.menuTxt}>
-          <Text style={[pageStyle.menuFont, {fontSize: 18}]}>Log Out</Text>
+
+        <View style={pageStyle.card}>
+          <View style={pageStyle.menuImg}>
+            <Image
+              source={require('./asset/loc.png')}
+              style={{width: '90%', height: '90%'}}
+            />
+          </View>
+          <View style={pageStyle.menuTxt}>
+            <Text style={[pageStyle.menuFont, {fontSize: 18}]}>
+              Kapasia, Gazipur, Dhaka
+            </Text>
+          </View>
+          <View style={pageStyle.menuArrow}>
+            <Image
+              source={require('./asset/arrow.png')}
+              style={{width: '100%', height: '100%'}}
+            />
+          </View>
         </View>
-        <View style={pageStyle.menuArrow}>
-          <Image
-            source={require('./asset/arrow.png')}
-            style={{width: '100%', height: '100%'}}
-          />
+
+        <View style={pageStyle.card}>
+          <View style={pageStyle.menuImg}>
+            <Image
+              source={require('./asset/logout.png')}
+              style={{width: '90%', height: '90%'}}
+            />
+          </View>
+          <View style={[pageStyle.menuTxt, {marginBottom: 20}]}>
+            <Text style={[pageStyle.menuFont, {fontSize: 18}]}>Log Out</Text>
+          </View>
+          <View style={pageStyle.menuArrow}>
+            <Image
+              source={require('./asset/arrow.png')}
+              style={{width: '100%', height: '100%'}}
+            />
+          </View>
         </View>
       </View>
-    </View>
+    </SafeAreaView>
   );
 };
 

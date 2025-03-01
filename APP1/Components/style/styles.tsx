@@ -13,10 +13,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   page: {
-    flex: 1,
     backgroundColor: '#f4f6f7',
-    justifyContent: 'center',
-    alignItems: 'center',
   },
   footer: {
     marginBottom: 10,
